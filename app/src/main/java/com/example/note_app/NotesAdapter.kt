@@ -14,7 +14,7 @@ class NotesAdapter(private var notes: List<Note>, private val context: Context) 
     inner class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
         val contentTextView: TextView = itemView.findViewById(R.id.contentTextView)
-        val updateButton: ImageView = itemView.findViewById(R.id.updateSaveButton)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
@@ -31,12 +31,6 @@ class NotesAdapter(private var notes: List<Note>, private val context: Context) 
         holder.contentTextView.text = note.content
 
 
-        holder.updateButton.setOnClickListener{
-            val intent = Intent(holder.itemView.context, UpdateActivity::class.java).apply{
-                putExtra("note_id",note.id)
-            }
-            holder.itemView.context.startActivity(intent)
-        }
     }
 
     fun refreshData(newNotes: List<Note>){
