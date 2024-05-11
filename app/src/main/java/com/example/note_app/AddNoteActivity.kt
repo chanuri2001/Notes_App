@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.note_app.databinding.ActivityAddNoteBinding
-import com.example.note_app.databinding.ActivityMainBinding
+
 
 class AddNoteActivity : AppCompatActivity() {
 

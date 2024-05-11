@@ -16,7 +16,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Notes."
         android:layout_marginStart="18dp"
-        android:textColor="@color/orange"
+        android:textColor="@color/blue"
         android:textSize="24sp" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecyclerView"
@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/baseline_add_24"
         app:tint="@color/white"
-        android:backgroundTint="@color/orange"/>
+        android:backgroundTint="@color/blue"/>
 
 
 

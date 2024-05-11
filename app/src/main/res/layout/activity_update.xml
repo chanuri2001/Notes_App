@@ -13,19 +13,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
         android:fontFamily="sans-serif-black"
         android:text="Edit Note"
-        android:textColor="@color/orange"
+        android:textColor="@color/blue"
         android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/updateSaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_cloud_done_24"
-        android:layout_alignParentEnd="true"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:src="@drawable/blue"
         android:layout_alignTop="@id/editNoteHeading"
-        android:layout_marginEnd="6dp"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="11dp"/>
     <EditText
         android:id="@+id/updateTitleEditText"
         android:layout_width="match_parent"
@@ -37,19 +39,26 @@
         android:background="@drawable/orange_border"
         android:layout_marginTop="16dp"
         android:maxLines="1"
-        android:fontFamily="sans-serif-black"/>
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
 
     <EditText
         android:id="@+id/updateContentEditText"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Enter the description"
-        android:gravity="top"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-black"
-        android:background="@drawable/orange_border"
+        android:layout_height="500dp"
         android:layout_below="@id/updateTitleEditText"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="sans-serif-black"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textSize="18sp" />
 
 </RelativeLayout>
